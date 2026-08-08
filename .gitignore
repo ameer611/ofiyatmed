@@ -1,0 +1,9 @@
+.DS_Store
+Thumbs.db
+.claude/
+
+# Internal research notes — kept out of the repo on purpose.
+# GitHub Pages serves every tracked file, so this would be readable at
+# ofiyatmed.uz/RESEARCH.md, and it contains an analysis of the clinic's
+# negative reviews. Keep it local, share it with the client directly.
+RESEARCH.md

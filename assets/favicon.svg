@@ -1,0 +1,21 @@
+<!-- App-icon treatment: the logo mark in white on a brand-red tile. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E2231A"/><stop offset="1" stop-color="#97130C"/>
+    </linearGradient>
+    <mask id="cut">
+      <rect x="195" y="212" width="216" height="216" fill="#fff"/>
+      <circle cx="350" cy="320" r="92" fill="#000"/>
+    </mask>
+  </defs>
+
+  <rect width="64" height="64" rx="14" fill="url(#tile)"/>
+
+  <svg x="8" y="8" width="48" height="48" viewBox="195 212 216 216" fill="#fff">
+    <circle cx="308" cy="320" r="105" mask="url(#cut)"/>
+    <path d="M242 320h40l18-45 28 100 20-55h24" fill="none" stroke="#fff"
+          stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="390" cy="320" r="10" fill="none" stroke="#fff" stroke-width="8"/>
+  </svg>
+</svg>

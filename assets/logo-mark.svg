@@ -1,0 +1,26 @@
+<!--
+  Ofiyat Med — production mark.
+
+  Same geometry as the clinic's supplied file (assets/logo.svg), with two
+  changes so it can be dropped on any background:
+    · the crescent is cut with a mask instead of being overlaid with an
+      opaque white disc, so the inside is transparent, not white;
+    · colour is `currentColor` with the brand red as the default, so the file
+      renders red on its own (as an <img>, where it cannot inherit colour from
+      the host page) but follows `color` when inlined or set via CSS.
+  viewBox is cropped to the artwork.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="195 212 216 216" width="216" height="216"
+     color="#E2231A" fill="currentColor" role="img" aria-label="Ofiyat Med">
+  <defs>
+    <mask id="om-cut">
+      <rect x="195" y="212" width="216" height="216" fill="#fff"/>
+      <circle cx="350" cy="320" r="92" fill="#000"/>
+    </mask>
+  </defs>
+
+  <circle cx="308" cy="320" r="105" mask="url(#om-cut)"/>
+  <path d="M242 320h40l18-45 28 100 20-55h24" fill="none" stroke="currentColor"
+        stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="390" cy="320" r="10" fill="none" stroke="currentColor" stroke-width="7"/>
+</svg>
