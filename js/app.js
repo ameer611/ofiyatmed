@@ -280,6 +280,19 @@
 
   /* ── Boot ─────────────────────────────────────────────── */
 
+  /* Ribbon height feeds the sticky header offset and scroll padding, and has to
+     be re-measured because the notice wraps to two lines on narrow screens.
+     Remove alongside the ribbon markup once the site is paid for. */
+  const ribbon = $('#ribbon');
+  if (ribbon) {
+    const measure = () => document.documentElement.style
+      .setProperty('--ribbon-h', ribbon.offsetHeight + 'px');
+    measure();
+    window.addEventListener('resize', measure);
+    if ('ResizeObserver' in window) new ResizeObserver(measure).observe(ribbon);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(measure);
+  }
+
   const year = String(new Date().getFullYear());
   $('#year').textContent = year;
   $$('.js-year').forEach((n) => { n.textContent = year; });

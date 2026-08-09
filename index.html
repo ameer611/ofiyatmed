@@ -64,6 +64,23 @@
 
 <a class="skip-link" href="#main" data-i18n="a11y.skip">Asosiy kontentga o'tish</a>
 
+<!-- ─── Demo / ownership ribbon ────────────────────────────────
+     Sticky above everything, on every scroll position.
+     TO REMOVE ONCE PAID: delete this <div class="ribbon"> block, the
+     .ribbon rules in css/styles.css, and the ribbon key group in
+     js/i18n.js. Nothing else depends on it.
+     ──────────────────────────────────────────────────────────── -->
+<div class="ribbon" id="ribbon" role="note">
+  <div class="wrap ribbon__inner">
+    <span class="ribbon__tag" data-i18n="ribbon.tag">DEMO</span>
+    <span class="ribbon__text" data-i18n="ribbon.text">Sayt hali to'lanmagan va Mukhammad Usmonov mulki hisoblanadi.</span>
+    <a class="ribbon__cta" href="https://t.me/Usmon_Muxammad" target="_blank" rel="noopener">
+      <span data-i18n="ribbon.cta">Sotib olish uchun bog'laning</span>
+      <svg class="ico" aria-hidden="true"><use href="#i-arrow"></use></svg>
+    </a>
+  </div>
+</div>
+
 <!-- ─── Topbar ─────────────────────────────────────────────── -->
 <div class="topbar">
   <div class="wrap topbar__inner">

@@ -166,6 +166,31 @@ Uzbekistan, Yandex matters at least as much as Google.
 
 ---
 
+## Ownership notice (remove when paid)
+
+The site currently carries two authorship markers:
+
+1. **A sticky ribbon** at the very top of every screen — `DEMO`, a statement that the site is
+   unpaid and remains the property of Mukhammad Usmonov, and a Telegram link to purchase.
+2. **A footer credit band** with the same attribution and a copyright line.
+
+### To remove both once the clinic pays
+
+| File | What to delete |
+|---|---|
+| `index.html` | the `<div class="ribbon">` block, and the `<div class="ftr__credit">` block |
+| `css/styles.css` | the `.ribbon*` rules, and the `.ftr__credit*` rules |
+| `js/i18n.js` | the three `ribbon.*` key groups (one per language), and `ftr.by` / `ftr.rights` |
+| `js/app.js` | the `const ribbon = $('#ribbon')` measurement block |
+
+Leave `--ribbon-h` alone if you like — it falls back to `0px`, so the sticky header and scroll
+padding behave correctly with the ribbon gone. Nothing else depends on any of it.
+
+The ribbon's height is measured at runtime rather than hard-coded, because the notice wraps to
+two or three lines on narrow screens and the sticky header offset has to follow it.
+
+---
+
 ## Brand
 
 The mark is the clinic's own vector file: a crescent moon with an ECG trace running out of its

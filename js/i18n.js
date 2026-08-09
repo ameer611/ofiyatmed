@@ -7,6 +7,12 @@ const I18N = {
 
   uz: {
     'a11y.skip':'Asosiy kontentga o\'tish',
+
+    /* Demo ribbon — delete this group when the site is paid for */
+    'ribbon.tag':'DEMO',
+    'ribbon.text':'Sayt hali to\'lanmagan va Mukhammad Usmonov mulki hisoblanadi.',
+    'ribbon.cta':'Sotib olish uchun bog\'laning',
+
     'brand.sub':'Tibbiyot markazi',
 
     'top.hours':'Statsionar va qabulxona — kun-u tun',
@@ -104,6 +110,12 @@ const I18N = {
 
   ru: {
     'a11y.skip':'Перейти к содержимому',
+
+    /* Demo ribbon — delete this group when the site is paid for */
+    'ribbon.tag':'ДЕМО',
+    'ribbon.text':'Сайт ещё не оплачен и является собственностью Mukhammad Usmonov.',
+    'ribbon.cta':'Связаться для покупки',
+
     'brand.sub':'Медицинский центр',
 
     'top.hours':'Стационар и регистратура — круглосуточно',
@@ -201,6 +213,12 @@ const I18N = {
 
   en: {
     'a11y.skip':'Skip to main content',
+
+    /* Demo ribbon — delete this group when the site is paid for */
+    'ribbon.tag':'DEMO',
+    'ribbon.text':'This site has not been paid for and remains the property of Mukhammad Usmonov.',
+    'ribbon.cta':'Contact to purchase',
+
     'brand.sub':'Medical Center',
 
     'top.hours':'Inpatient care & reception — 24/7',
