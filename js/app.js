@@ -280,6 +280,8 @@
 
   /* ── Boot ─────────────────────────────────────────────── */
 
-  $('#year').textContent = new Date().getFullYear();
+  const year = String(new Date().getFullYear());
+  $('#year').textContent = year;
+  $$('.js-year').forEach((n) => { n.textContent = year; });
   renderAll();
 })();

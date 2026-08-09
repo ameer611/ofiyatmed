@@ -97,7 +97,9 @@ const I18N = {
     'con.hours1':'Statsionar va qabulxona — kun-u tun, 7/7',
     'con.hours2':'Ambulator qabul — dush–shan, 09:00–18:00',
 
-    'ftr.disclaimer':'Saytdagi ma\'lumot tibbiy maslahat o\'rnini bosmaydi. Shifokor bilan maslahatlashing.'
+    'ftr.disclaimer':'Saytdagi ma\'lumot tibbiy maslahat o\'rnini bosmaydi. Shifokor bilan maslahatlashing.',
+    'ftr.by':'Saytni ishlab chiqdi',
+    'ftr.rights':'Sayt dizayni va dasturiy kodi mualliflik huquqi bilan himoyalangan.'
   },
 
   ru: {
@@ -192,7 +194,9 @@ const I18N = {
     'con.hours1':'Стационар и регистратура — круглосуточно, 7/7',
     'con.hours2':'Амбулаторный приём — пн–сб, 09:00–18:00',
 
-    'ftr.disclaimer':'Информация на сайте не заменяет консультацию врача. Обратитесь к специалисту.'
+    'ftr.disclaimer':'Информация на сайте не заменяет консультацию врача. Обратитесь к специалисту.',
+    'ftr.by':'Разработка сайта',
+    'ftr.rights':'Дизайн и программный код сайта защищены авторским правом.'
   },
 
   en: {
@@ -287,7 +291,9 @@ const I18N = {
     'con.hours1':'Inpatient care & reception — 24/7',
     'con.hours2':'Outpatient consultations — Mon–Sat, 09:00–18:00',
 
-    'ftr.disclaimer':'Information on this site does not replace medical advice. Please consult a doctor.'
+    'ftr.disclaimer':'Information on this site does not replace medical advice. Please consult a doctor.',
+    'ftr.by':'Website designed and built by',
+    'ftr.rights':'Site design and source code are protected by copyright.'
   }
 };
 

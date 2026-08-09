@@ -419,6 +419,25 @@ dialog{border:0; padding:0}
 .ftr__legal{display:flex; justify-content:space-between; gap:18px; flex-wrap:wrap;
   padding-top:20px; font-size:.8rem; color:#9F6D67}
 
+/* Authorship notice — its own band so it reads as separate from the clinic's
+   own copyright line above it, and stays legible rather than fading out. */
+.ftr__credit{
+  margin-top:24px; background:rgba(0,0,0,.28);
+  border-top:2px solid var(--brand-600);
+}
+.ftr__creditInner{
+  display:flex; justify-content:space-between; align-items:center; gap:14px; flex-wrap:wrap;
+  padding-block:16px;
+}
+.ftr__creditBy{font-size:.9rem; color:#E6C9C4}
+.ftr__creditBy a{
+  color:#fff; font-weight:800; margin-left:5px;
+  border-bottom:1px solid var(--brand-500); padding-bottom:1px;
+  transition:color .16s, border-color .16s;
+}
+.ftr__creditBy a:hover{color:var(--brand-500)}
+.ftr__creditRights{font-size:.78rem; color:#A9827C}
+
 /* ── FAB ──────────────────────────────────────────────────── */
 .fab{
   position:fixed; right:16px; bottom:16px; z-index:70; display:none;
@@ -449,8 +468,9 @@ dialog{border:0; padding:0}
 .reveal.is-in{opacity:1; transform:none; transition:opacity .6s var(--ease), transform .6s var(--ease)}
 
 /* ── Responsive ───────────────────────────────────────────── */
-/* Russian nav labels are the widest — drop the phone button before the nav wraps */
-@media (max-width:1260px){
+/* Russian nav labels are the widest — drop the phone button before the nav wraps.
+   Measured: RU needs ~1324px of header content, so hide it below 1360 for margin. */
+@media (max-width:1360px){
   .btn--phone{display:none}
 }
 @media (max-width:1180px){
